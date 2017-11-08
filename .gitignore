@@ -13,6 +13,14 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+.vs/
+packages/
+TiBSK/bin/
+TiBSK/obj/
+TiBSK.Helpers/bin/
+TiBSK.Helpers/obj/
+TiBSK.UnitTests/bin/
+TiBSK.UnitTests/obj/
 
 # Windows shortcuts
 *.lnk
