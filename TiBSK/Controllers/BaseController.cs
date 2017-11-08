@@ -6,11 +6,8 @@ using System.Web.Mvc;
 
 namespace TiBSK.Controllers
 {
-    public class HomeController : BaseController
+    public class BaseController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
+
     }
 }
