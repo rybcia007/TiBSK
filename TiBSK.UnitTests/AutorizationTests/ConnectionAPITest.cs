@@ -3,15 +3,19 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TiBSK.UnitTests.AutorizationTests
 {
-    /// <summary>
-    /// Jest to jeden z 4x możliwych przepływów OAutha
-    /// </summary>
     [TestClass]
-    public class AutorizationCodeTest
+    public class ConnectionAPITest
     {
+        /// <summary>
+        /// Przekierowanie użytkownika na auth screen
+        /// </summary>
         [TestMethod]
         public void TestMethod1()
         {
         }
+
+        // New Class ## odebranie responsa z API
+
+        // 
     }
 }

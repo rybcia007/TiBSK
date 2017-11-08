@@ -11,6 +11,10 @@ namespace TiBSK.UnitTests.ControllersTests
         {
         }
 
+        // odpalenie widoku logowania
+
+        // nie udało się uwierzytelnić użytkownika => test pokaż info na widoku
+
 
     }
 }
