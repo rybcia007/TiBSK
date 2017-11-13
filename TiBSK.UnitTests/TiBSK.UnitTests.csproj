@@ -48,9 +48,6 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutorizationTests\AutorizationCodeTest.cs" />
-    <Compile Include="AutorizationTests\ConnectionAPITest.cs" />
-    <Compile Include="ControllersTests\LoginControllersTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
