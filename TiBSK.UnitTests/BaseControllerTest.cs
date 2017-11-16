@@ -12,8 +12,6 @@ namespace TiBSK.UnitTests
         {
             var _controller = new BaseController();
 
-
-            // dodać sesję 
         }
     }
 }

@@ -9,5 +9,6 @@ namespace TiBSK.Controllers
     public class BaseController : Controller
     {
 
+        // dodać sesję 
     }
 }
