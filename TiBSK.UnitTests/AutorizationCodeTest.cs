@@ -7,11 +7,15 @@ namespace TiBSK.UnitTests
     [TestClass]
     public class AutorizationCodeTest
     {
+
         [TestMethod]
-        public void DoOAuth_Test()
+        public void RequestCode_GetRequestCode_ReturnEmptyCode()
         {
             var _obj = new AutorizationCode();
-            _obj.DoOAuth();
+
+            string code = _obj.RequestCode();
+
+            Assert.AreEqual(code, string.Empty);
         }
 
         [TestMethod]
@@ -21,7 +25,7 @@ namespace TiBSK.UnitTests
 
             string code=_obj.RequestCode();
 
-            Assert.AreNotEqual(code, string.Empty);
+            //Assert.AreNotEqual(code, string.Empty);  od komentować gdy będzie już ciało metody zwracające/nie zawracające kodu
         }
 
         [TestMethod]

@@ -10,14 +10,13 @@ namespace TiBSK.Helpers.OAuth2
 
     public class AutorizationCode
     {
+        private const string CLIENT_ID = "";
+        private const string CLIENT_SECRET = "";
+        private const string REDIRECT_URL = "https://localhost:PORT";
+
         public string RequestCode()
         {
-            return "ExampleCode";
-        }
-
-        public void DoOAuth()
-        {
-            throw new NotImplementedException();
+            return string.Empty;
         }
 
         public string ExchangeCodeForToken(string code)
