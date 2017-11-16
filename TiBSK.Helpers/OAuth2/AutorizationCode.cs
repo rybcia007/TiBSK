@@ -10,5 +10,24 @@ namespace TiBSK.Helpers.OAuth2
 
     public class AutorizationCode
     {
+        public string RequestCode()
+        {
+            return "ExampleCode";
+        }
+
+        public void DoOAuth()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string ExchangeCodeForToken(string code)
+        {
+            if (!string.IsNullOrEmpty(code))
+            {
+                return "ExampleToken";
+            }
+
+            throw new NullReferenceException();
+        }
     }
 }
