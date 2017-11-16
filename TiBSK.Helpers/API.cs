@@ -8,6 +8,8 @@ namespace TiBSK.Helpers
 {
     public interface API
     {
-         
+        // https://developers.facebook.com/docs/graph-api/reference/user/
+
+        // Pobierz listę znajomych użytkownika
     }
 }
