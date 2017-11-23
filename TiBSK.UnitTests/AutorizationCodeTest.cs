@@ -1,9 +1,15 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TiBSK.Helpers.OAuth2;
+using Newtonsoft.Json;
+using System.IO;
+using System.Net;
+using System.Net.Http;
 
 namespace TiBSK.UnitTests
 {
+    //https://stackoverflow.com/questions/24057939/login-using-google-oauth-2-0-with-c-sharp
+
     [TestClass]
     public class AutorizationCodeTest
     {
@@ -11,21 +17,19 @@ namespace TiBSK.UnitTests
         [TestMethod]
         public void RequestCode_GetRequestCode_ReturnEmptyCode()
         {
-            var _obj = new AutorizationCode();
+            var _obj = new FacebookAuthorization();
 
-            string code = _obj.RequestCode();
+         
 
-            Assert.AreEqual(code, string.Empty);
+           
         }
 
         [TestMethod]
         public void RequestCode_GetRequestCode_ReturnCode()
         {
-            var _obj = new AutorizationCode();
+            var _obj = new FacebookAuthorization();
 
-            string code=_obj.RequestCode();
-
-            //Assert.AreNotEqual(code, string.Empty);  od komentować gdy będzie już ciało metody zwracające/nie zawracające kodu
+           
         }
 
         [TestMethod]
@@ -33,7 +37,7 @@ namespace TiBSK.UnitTests
         [ExpectedException(typeof(NullReferenceException))]
         public void ExchangeCodeForToken_CheckExchangeUserCodeForToken_ReturnNull(string code)
         {
-            var _obj = new AutorizationCode();
+            var _obj = new FacebookAuthorization();
 
             var token = _obj.ExchangeCodeForToken(code);
         }
@@ -42,7 +46,7 @@ namespace TiBSK.UnitTests
         [DataRow("123#Casda")]
         public void ExchangeCodeForToken_CheckExchangeUserCodeForToken_ReturnToken(string code)
         {
-            var _obj = new AutorizationCode();
+            var _obj = new FacebookAuthorization();
 
             var token = _obj.ExchangeCodeForToken(code);
 
