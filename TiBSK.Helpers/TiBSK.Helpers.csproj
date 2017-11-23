@@ -41,7 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API.cs" />
-    <Compile Include="OAuth2\AutorizationCode.cs" />
+    <Compile Include="OAuth2\FacebookAuthorization.cs" />
+    <Compile Include="OAuth2\IAuthorization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

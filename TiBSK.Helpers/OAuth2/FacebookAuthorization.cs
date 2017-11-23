@@ -37,7 +37,10 @@ namespace TiBSK.Helpers.OAuth2
 
         public string GetCode()
         {
-            throw new NotImplementedException();
+            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://accounts.google.com/o/oauth2/token");
+            webRequest.Method = "POST";
+
+            return string.Empty;
         }
 
         public string ExchangeCodeForToken(string code)

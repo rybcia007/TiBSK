@@ -19,7 +19,7 @@ namespace TiBSK.UnitTests
         {
             var _obj = new FacebookAuthorization();
 
-         
+            _obj.GetCode();
 
            
         }
