@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace TiBSK.Helpers.OAuth2
 {
     //https://pikfiszki.wordpress.com/2016/05/24/oauth2-napiszmy-jakis-kod/
+    //https://auth0.com/docs/connections/social/facebook
 
     public class FacebookAuthorization : IAuthorization
     {
@@ -15,7 +16,7 @@ namespace TiBSK.Helpers.OAuth2
         {
             get
             {
-                return "";
+                return "144687559490376";
             }
         }
 
@@ -23,7 +24,7 @@ namespace TiBSK.Helpers.OAuth2
         {
             get
             {
-                return "";
+                return "d7af3ebd0316c38c38afb508b988f522";
             }
         }
 

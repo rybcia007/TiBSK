@@ -3,6 +3,65 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{your-app-id}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{latest-api-version}'
+    });
+
+    FB.AppEvents.logPageView();
+
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+@* -------------------- drugi kod z kreatora *@
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+
+@* -------------------- trzeci kod z kreatora *@
+
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+    }
+}
+
+@* -------------------- czwarty kod z kreatora *@
+
+
+<fb:login-button scope="public_profile,email"
+                 onlogin="checkLoginState();">
+</fb:login-button>
+
+@* -------------------- piąty kod z kreatora *@
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
+
+
+
 <div class="jumbotron">
     <div class="row" style="margin: 0px 0px 15px 0px;">
         <div class="col-md-8">
